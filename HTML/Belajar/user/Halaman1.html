@@ -4,6 +4,10 @@
 
   <title>Halaman 1</title> <!--Ini Adalah Judul Web-->
   
+  <style>
+    label {text-align: center;}
+  </style>
+
 </head>
 <body>
   <!-- Heading -->
@@ -173,8 +177,8 @@
     <label for="username">username :</label> <!--Untuk membuat nama input-->
     <input type="text" id="username"> <!--Type text untuk menginput text biasa-->
      <br><br>
-    <label for="password">password :</label> 
-    <input type="password" id="password"> <!--Type password untuk menginput password dan text akan di hide-->
+    <!-- <label for="password">password :</label>  -->
+    <!-- <input type="password" id="password"> Type password untuk menginput password dan text akan di hide -->
       <br><br>
     <label for="Pria">Pria :</label> <input type="radio" id="Pria" name="Gender"> <!--Type Radio untuk membuat input pilihan seperti gender dan atribut name untuk menggabungkannya-->
     <label for="Wanita">Wanita :</label> <input type="radio" id="Wanita" name="Gender">
@@ -195,6 +199,69 @@
       <option>Lord Depan gang</option>
     </select>
   </form>
+
+  <br><br>
+
+  <!--Latihan Final-->
+  <table border="0" cellspacing="0" cellpadding="3">
+    <form>
+      <tr>
+        <td>
+          <label for="text">Text: </label>
+        </td>
+        <td>
+          <input type="text" id="text">
+        </td>
+      </tr>>
+      <tr>
+        <td>
+          <label for="password">Password: </label>
+        </td>
+        <td>
+          <input type="password" id="password">
+        </td>
+      </tr>
+    <tr>
+      <td colspan="2">
+        <label for="radio 1">radio 1</label>
+        <input type="radio" name="radio" id="radio 1">
+        <label for="radio 2">radio 2</label>
+        <input type="radio" name="radio" id="radio 2">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <label for="checkbox 1">checkbox 1</label>
+        <input type="checkbox" id="checkbox 1">
+        <label for="checkbox 2">checkbox 2</label>
+        <input type="checkbox" id="checkbox 2">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="combo box">Combo box</label>
+      </td>
+      <td>
+        <select id="combo box">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="text area">Textarea: </label>
+      </td>
+      <td>
+        <textarea id="text area"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><button type="submit">button</button></td>
+    </tr>
+  </form>
+  </table>
 
 
 </body>
