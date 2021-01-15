@@ -1,0 +1,13 @@
+h1 {
+    color:black; /*Untuk Mengatur Warna */
+    font-family: monospace; /*untuk mengganti jenis font*/
+    font-size: 70px; /*untuk mengatur ukuran font*/
+    font-weight: bolder; /* untuk mengatur ketebalan font*/
+    font-variant: small-caps; /*untuk mengatur font menjadi small caps*/
+    font-style: oblique; /*untuk mengatur font menjadi italic*/
+    line-height: 20px; /*untuk mengatur spasi antar baris*/
+    text-align: center; /*untuk mengatur align sebuah text*/
+}
+h2 {
+    font: italic normal bold 20px/10px monospace; /*urutannya harus 1.font style 2.font variant 3.font weight 4.font size 5.line height 6.font family
+}
