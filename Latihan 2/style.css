@@ -1,13 +1,109 @@
 h1 {
-    color:black; /*Untuk Mengatur Warna */
+    /* Font Styling */
     font-family: monospace; /*untuk mengganti jenis font*/
     font-size: 70px; /*untuk mengatur ukuran font*/
     font-weight: bolder; /* untuk mengatur ketebalan font*/
     font-variant: small-caps; /*untuk mengatur font menjadi small caps*/
     font-style: oblique; /*untuk mengatur font menjadi italic*/
     line-height: 20px; /*untuk mengatur spasi antar baris*/
-    text-align: center; /*untuk mengatur align sebuah text*/
+    /* text styling */
+    color:#1b004d; /*Untuk Mengatur Warna bisa memakai nama warna,hexadecimal,bahkan rgb*/
+    text-align: center; /*untuk mengatur format sebuah text bisa memakai center untuk tengah,right untuk rata kanan,left untuk rata kiri,dan justify untuk rata kiri dan rata kanan*/
+    text-indent: 0%; /*untuk mengatur indentasi pada sebuah text bisa memakai % atau px(pixel)*/
+    text-decoration: line-through; /* mengatur dekorasi pada text,underline untuk garis dibawah text,overline untuk garis diatas text,line-through untuk garis di text atau mencoret text */
+    text-transform: capitalize; /* mengubah jenis huruf menjadi besar atau kecil,lowercase untuk menjadikan text kecil,uppercase untuk menjadikan text besar,dan capitalize untuk membuat text kapital*/
+    letter-spacing: 10px;/* untuk mengatur spasi antar huruf */
+    word-spacing: 0px;/* untuk mengatur spasi antar kata */
 }
 h2 {
-    font: italic normal bold 20px/10px monospace; /*urutannya harus 1.font style 2.font variant 3.font weight 4.font size 5.line height 6.font family
+    font: italic normal bold 20px/10px monospace; /*urutannya harus 1.font style 2.font variant 3.font weight 4.font size 5.line height 6.font family*/
+    text-align: center;
+    color: white;
+}
+p {
+    text-align: center;
+    color: white;
+    font-family:monospace;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+/* Background */
+body {
+    /* Background */
+    /* background-color: silver; /*untuk mengubah warna background*/
+    /* background-image: url(Gambar/Background.png) untuk mengubah background menggunakan gambar */
+    /* background-repeat: no-repeat; untuk mengulang gambar untuk background    */
+    /* background-position: center  untuk mengatur posisi background */
+    background: gray url(Gambar/Background.png); /*untuk mempersingkat urutannya harus 1.color 2.image 3.position 4.repeat*/
+}
+
+/* separator */
+ul,ol {color: white;} /*separator atau grouping agar lebih cepat tinggal pake koma saja dan keduanya akan diberikan style yang sama*/
+
+ul li a {color:white;} /*Artinya adalah di ul dan di dalam li dan di a tolong rubah menjadi warna putih,jadinya a yang ada di dalam li akan berubah menjadi putih*/
+
+/* Id */
+#p2 { /*memakai # untuk mencari id*/
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+/* Class */
+.p1 { /* memakai . untuk mencari class*/
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.cetak-tebal { /*di html hanya menggunaka spasi kita dapat menambahkan class atau id mungkin ya*/
+    font-weight: bold;
+    font-family: arial;
+}
+
+p.cetak-tebal { /*memakai p di awal untuk lebih spesifik ke elemen p di html karena class bisa dipakai di elemen yang lain*/
+    font-style: italic;
+}
+
+
+/* Pseudo class pada sebuah link */
+.l1:link { /*memakai :link untuk memberikan sebuah style pada elemen link pada saat elemen tersebut didiamkan atau belum di klik sama sekali*/
+    color: white;
+}
+
+.l1:hover { /*memakai :hover untuk memberikan sebuah style pada elemen link pada saat elemen link tersebut mau di klik atau cursornya ada di elemen link tersebut*/
+    color: pink;
+    font-family: monospace;
+}
+
+.l1:active { /*memakai :active untuk memberikan sebuah style pada elemen link pada saat elemen link tersebut di klik*/
+    color: purple;
+    font-family: arial;
+    font-style: italic;
+}
+
+.l1:visited { /*memakai :visited untuk memberikan sebuah style pada sebuah elemen link pada saat elemen link tersebut pernah dikunjungi*/
+    color: silver;
+    font-variant: capitalize;
+}     
+
+/* Pseudo class untuk posisi element */
+li:first-child a {  /*memakai first child untuk elemen anak di li yang pertama*/
+    color:blue;
+}
+
+li:last-child a { /*memakai last child untuk elemen anak di li yang terakhir*/
+    color: green;
+}
+
+li:nth-child(3) a.l1 { /*memakai nth child untuk elemen anak di li yang dituju dengan angka seperti anak ke 1 anak ke 2 dan seterusnya,bisa juga memakai kelipatan contoh kelipatan 2 memakai (2n) dan jika ingin memulai kelipatannya lebih awal 1 angka kita bisa memakai (2n-1),bisa juga memakai (even) untuk angka genap dan (odd) untuk angka ganjil*/
+    color: brown;
+}
+
+p:first-of-type { /*memakai first-of-type untuk elemen p yang pertama*/
+    color:rgb(255, 255, 0)
+}
+
+p:last-of-type { /*memakai last-of-type untuk elemen p yang terakhir*/
+    color: rgb(255, 0, 255);
 }
