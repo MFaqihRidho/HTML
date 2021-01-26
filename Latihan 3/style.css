@@ -1,0 +1,34 @@
+h1 {
+    color: black;
+    font-family: monospace ;
+    text-align: center;
+    font-size: 50px;
+    font-style: bold;
+    font-style: italic;
+}
+
+.DaftarLink {
+    background-color:black;
+    font-family: monospace;
+    color :white;
+    text-align: left;
+    font-size: 25px;
+    display: inline-block; /*inline block agar bisa mengatur tinggi dan lebarnya*/
+    width: 330px;
+    height: 200px;
+}
+.DaftarLink span {
+    font-size: 35px;
+    font-style: italic;
+}    
+
+.DaftarLink li {
+    display: inline; /*memakai inline agar tidak membuat garis baru*/
+}
+
+h2 {
+    background-color: black;
+    color: white;
+    display: block; /*block itu defaultnya lebarnya akan memenuhi parentnya */
+    width: 50%;
+}
