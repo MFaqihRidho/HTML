@@ -6,7 +6,7 @@ h1 {
     font-style: bold;
     font-style: italic;
 }
-
+/*div dan span*/
 .DaftarLink {
     background-color:black;
     font-family: monospace;
@@ -22,6 +22,7 @@ h1 {
     font-style: italic;
 }    
 
+/*Display*/
 .DaftarLink li {
     display: inline; /*memakai inline agar tidak membuat garis baru*/
 }
@@ -32,3 +33,63 @@ h2 {
     display: block; /*block itu defaultnya lebarnya akan memenuhi parentnya */
     width: 50%;
 }
+
+/*dimensi dan overflow*/
+.satu {
+    width: 200px;
+    height: 100px;
+}
+
+.dua {
+    width: 100%; /*Karena parentnya yaitu satu memiliki width 200px maka anaknya yaitu dua akan mengikuti sesuai parentnya dan juga persentasenya*/
+    color: white;
+    background-color: silver;
+}
+
+.lorem {
+    overflow: auto; /*Auto agar ketika keluar dari padding maka akan menambahkan sebuah scroll,hidden agar ketika keluar dari padding maka akan disembunyikan,scroll agar ketika keluar dari padding maka akan menambahkan sebuah scroll bedanya dengan auto adalah ketika cukup auto akan menghilangkan scrollnya tetapi kalau scroll scrollnya tidak akan hilang*/
+    background-color: black;
+    color: white;
+    width:200px;
+    height: 200px;
+}
+
+/* Margin */
+.tiga {
+    width: 200px;
+    height: 200px;
+    background-color: lightgreen;
+    margin-left: auto; /*Menambahkan margin kiri*/ /*ketika memakai auto di kiri dan kanan maka dia akan berada di tengah tengah posisi parentnya*/
+    margin-right: auto; /*Menambahkan margin kanan*/
+    margin-top: 100px; /*Menambahkan margin atas*/
+    margin-bottom: 100px; /*Menambahkan margin bawah*/
+    /* display: inline-block; */
+}
+
+.empat {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-top: 50px; /*margin vertikal tidak akan dianggap ketika diatas atau dibawah margin ada margin dengan size yang lebih besar dan sebaliknya jika marginnya lebih besar maka yang tidak dianggap adalah margin yang lebih kecil*/
+    margin-right: 50px; /* berbeda dengan margin vertikal,margin horizontal akan menambahkan satu margin dengan margin yang lainnya*/
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.lima {
+    width: 50px;
+    height: 50px;
+    background-color: violet;
+    margin-left: 70px;
+    margin-top: -120px; /*berbeda lagi ketika margin negatif maka margin yang ada disebelahnya akan dilawan arusnya oleh margin negatif*/
+    /* display: inline-block; */
+}
+
+.enam {
+    width: 25px;
+    height: 25px;
+    background-color: pink;
+    margin: 50px; /* ketika valuenya hanya satu yang diambil adalah ke 4 sisi,ketika valuenya ada 2 maka value pertama mengambil sisi atas dan bawah sedangkan value ke 2 mengambil sisi kiri dan kanan,ketika valuenya ada 3 makan urutannya 1.sisi atas 2.sisi kiri dan kanan 3.sisi bawah,ketika valuenya ada 4 maka urutannya searah jarum jam 1.sisi atas 2.sisi kanan 3.sisi bawah 4.sisi kiri*/
+}
+
+/* Padding dan border */
