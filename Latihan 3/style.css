@@ -93,3 +93,62 @@ h2 {
 }
 
 /* Padding dan border */
+.paddingdanborder{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    padding: 10px; /* sama dengan margin ketika valuenya hanya satu yang diambil adalah ke 4 sisi,ketika valuenya ada 2 maka value pertama mengambil sisi atas dan bawah sedangkan value ke 2 mengambil sisi kiri dan kanan,ketika valuenya ada 3 makan urutannya 1.sisi atas 2.sisi kiri dan kanan 3.sisi bawah,ketika valuenya ada 4 maka urutannya searah jarum jam 1.sisi atas 2.sisi kanan 3.sisi bawah 4.sisi kiri*/
+    /* Padding berbeda dengan margin,padding tidak bisa memakai value auto dan value minus */
+    border: 5px double red; /*Urutan valuenya adalah 1.ukuran 2.style 3.warna*/ /*untuk style ada 3 yang bisa dipakai yaitu 1.solid untuk border yang solid hanya garis saja 2.dotted yaitu bordernya menjadi titik titik kecil 3.dashed bordernya menjadi putus putus 4.double bordernya jadi ada 2 garis*/
+    /*sama seperti margin dan padding kita bisa memakai hanya salah satu sisi seperti top,right,bottom,dan left*/
+    box-sizing: border-box; /*box-sizing adalah elemen yang membuat kotaknya tetap menjadi ukuran awal meskipun menambahkan padding dan border*/
+}
+
+/* Reset */
+/* Untuk mereset semua elemen html */
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers 
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
