@@ -152,3 +152,100 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 } */
+
+/* float */
+
+.float {
+    width:600px;
+    height: 300px;
+    border: 1px solid;
+    margin: auto;
+    padding: 10px;
+}
+
+.float1 , .float2 , .float3 {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.float1 {
+    background-color:salmon;
+}
+
+.float2 {
+    background-color:skyblue;
+    float: left; /*memindahkan elemen ke paling kiri dari size parentnya*/
+}
+
+.float3 {
+    background-color:green;
+    float: right; /*memindahkan elemen ke paling kanan dari size parentnya*/
+}
+
+/* text wrapping with float */
+
+.text {
+    width:600px;
+    height: 400px;
+    border: 1px solid;
+    margin: auto;
+    padding: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    float: right; /*membuat gambar menjadi di kanan atau kiri dan teksnya akan berada di sampingnya*/
+}
+
+/* Image gallery with float */
+.gallery {
+    width:600px;
+    border: 1px solid;
+    margin: auto;
+    padding: 10px;
+}
+
+.kotak {
+    width:80px;
+    height: 80px;
+    color: white;
+    background-color:skyblue;
+    text-align: center;
+    line-height:80px;
+    margin : 2px;
+    float: left;    
+}
+
+/* multi column layout with float*/
+
+.multi {
+    width:800px;
+    border: 1px solid;
+    margin: auto;
+    padding: 10px;
+}
+
+.kiri {
+    width:200px;
+    background-color: salmon;
+    height: 500px;
+    float: left; /*semua element left semua agar saling berdampingan*/
+}
+
+.tengah {
+    width:450px; /*ukurannya harus menyesuaikan dengan parentnya*/
+    background-color:skyblue;
+    height: 500px;
+    float: left;
+}
+
+.kanan {
+    width:150px;
+    background-color:green;
+    height: 500px;
+    float: left;
+}
+
