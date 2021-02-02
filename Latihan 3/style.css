@@ -188,7 +188,6 @@ table {
 
 .text {
     width:600px;
-    height: 400px;
     border: 1px solid;
     margin: auto;
     padding: 10px;
@@ -198,6 +197,10 @@ table {
     width: 200px;
     height: 200px;
     float: right; /*membuat gambar menjadi di kanan atau kiri dan teksnya akan berada di sampingnya*/
+}
+
+.clear1 {
+    clear: right; /*untuk membersihkan float agar logo bisa terdeteksi parent*/
 }
 
 /* Image gallery with float */
@@ -218,6 +221,11 @@ table {
     margin : 2px;
     float: left;    
 }
+
+.clear3 {
+    clear: left;
+}
+
 
 /* multi column layout with float*/
 
@@ -249,3 +257,6 @@ table {
     float: left;
 }
 
+.clear2 {
+    clear: left;
+}
