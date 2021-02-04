@@ -1,0 +1,40 @@
+body {
+    height:2000px;
+}
+
+
+div {
+    width:200px;
+    height: 200px;
+    margin : auto;
+}
+
+.container {
+    width:600px;
+    height:600px;
+    border : 10px solid black;
+    position: relative;
+}
+
+.satu {
+    background-color: maroon;
+    position: absolute; /*akan menanggap bahwa elemen selanjutnya itu tidak ada */ 
+    top: 0;
+    right: 0;
+}
+
+.dua {
+    background-color: navy;
+    position: relative; /*agar kita dapat memindahkan posisi elemen,berbeda dengan margin yang akan membuat elemen lain juga ikut pindah ketika kita pakai position relative maka saat dipindahkan tidak akan mempengaruhi elemen lain*/    
+    bottom: 10px;
+    left: 10px;
+}
+
+.tiga {
+    width: 100%;
+    height: 50px;
+    background-color:darkgreen;
+    position: fixed; /*akan selalu fixed tidak akan berpindah kemanapun meskipun kita scroll webnya contohnya seperti topbarnya facebook*/
+    top : 0;
+    left: 0;
+}
