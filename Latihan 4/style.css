@@ -51,10 +51,34 @@ body {
     color: #333333;
 }
 
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height:40px;
+    background-color: skyblue;
+    border-bottom: 4px solid salmon;
+    z-index: 9999;
+}
+
 .container {
     width: 960px;
-    margin: auto;
+    margin: 80px auto;
     background-color: white;
+    position: relative;
+}
+
+.github {
+    width: 200px;
+    height: 200px ;
+    background-image: url(img/twitter.png);
+    background-size: 200px;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    top: -23px;
+    right:-34px;
 }
 
 .header {
