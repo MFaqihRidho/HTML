@@ -1,0 +1,42 @@
+body {
+    background-image: url(img/tic-tac-toe.png);
+}
+
+.hello {
+    height:400px;
+    width: 400px;
+    background-color: salmon;
+    border-radius:150px; /*untuk membuat semua ujung kotak menjadi tumpul atau sedikit bulat,untuk membuatnya menjadi bulat kasih value setengah dari tinggi dan lebar elemennya*/
+    border-top-left-radius: 100px; /*untuk membuat ujung kiri atas kotak menjadi Tumpul*/
+    border-top-right-radius: 100px; /*untuk membuat ujung kanan atas kotak menjadi Tumpul*/
+    border-bottom-left-radius: 100px; /*untuk membut ujung bawah kiri kotak menjadi Tumpul*/
+    border-bottom-right-radius: 100px; /*untuk membut ujung bawah kanan kotak menjadi Tumpul*/
+    border-radius: 0 50% 0 50%; /*bisa juga di pendekkan menjadi seperti ini dan urutannya adalah 1.top left 2.top right 3.bottom right 4.bottom left atau searah jarum jam*/
+    text-align:center;
+    line-height:400px;
+}
+
+.half-circle {
+    height:100px;
+    width:200px;
+    border: 10px solid salmon;
+    border-radius: 200px 200px 0 0;
+    opacity: 10%; /*mengatur transparasi elemen bisa memakai 0-1 atau 0%-100%*/
+}
+
+.satu {
+    height:200px;
+    width:200px;
+    background-color:rgba(255,153,153,50%); /*guna rgba atau red green blue alpha adalah untuk membuat warna dengan urutan 1.red 2.green 3.blue 4.alpha alpha adalah berapa transparasi dari warna tersebut*/
+    position: relative;
+}
+
+.dua {
+    height:50px;
+    width:50px;
+    background-color:hsla(210,100%,80%,1);  /*sama dengan rgba bedanya ini adalah hsla atau hue saturation lightness alpha adalah untuk membuat warna dengan urutan 1.hue atau roda warna 2.saturation atau intesitas warna 3.lightness atau kecerahan warna 4.alpha yang fungsinya sama dengan rgba yaitu untuk transparasi warna*/
+    position: absolute;
+    right:-30px;
+    bottom:-30px;
+}
+
