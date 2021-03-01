@@ -1,0 +1,146 @@
+/* Font */
+@font-face {
+    font-family: "BebasNeue";
+    src: url("../font/BebasNeue-Regular.woff") format("woff");
+}
+
+/* Main Style */
+
+body {
+    font: 18px/36px  "BebasNeue",arial,sans-serif;
+    background-color: #dddd;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px 0px;
+    color:white;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+}
+
+.thumbnail{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+
+.container {
+    width: 600px;
+    background-color:white;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.gallery li {
+    width:120px;
+    height:120px;
+    border-radius: 120px;
+    /* overflow: hidden; */
+    box-shadow: 0 0 2px 5px rgba(102,102,102,0.5);
+    float: left;
+    margin: 0px 15px;
+    position: relative;
+}
+
+.gallery li span {
+    display: block;
+    width:120px;
+    height:120px;
+    background-color:rgba(102,102,102,0.6);
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    text-align: center;
+    line-height:120px;
+    color:  rgba(102,102,102);
+    text-shadow: 0.5px 0.5px 2px white;
+    opacity: 0;
+    transition: 400ms;
+}
+
+.gallery li a:hover span {
+    opacity: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.overlay {
+    width:0;
+    height:0;
+    overflow:hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 9999;
+    text-align: center;
+    transition: 600ms;
+    padding: 100px 0px;
+}
+
+.overlay:target {
+    width:auto;
+    height:auto;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 0 0 2px 5px rgba(102,102,102,0.5);
+}
+
+.overlay:target img {
+    animation: fade 600ms; 
+}
+
+.overlay .close {
+    position: absolute;
+    top :60px;
+    margin-left: 750px;
+    color:white;
+    text-decoration: none;
+    text-shadow: 0.5px 0.5px 2px black;
+    background-color: rgba(102,102,102,0.5);
+    border: 1px solid white;
+    line-height: 14px;
+    padding:5px;
+}
+
+.overlay:target .close,.next,.previous {
+    animation: fade 600ms; 
+}
+
+.next,.previous {
+    position:absolute;
+    width:57px;
+    height:93px;
+    background-image: url(../img/full/arrow.png);
+    text-indent: -9999px;
+    transform: rotate(180deg) translate(-30px,0) ;
+    margin-top:230px;
+}
+
+.previous {
+    background-image: url(../img/full/arrow.png);
+    margin-right: 100px ;    
+    transform: rotate(0deg) translate(-880px,0);
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
