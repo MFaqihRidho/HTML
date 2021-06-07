@@ -203,6 +203,46 @@ body {
     gap: 5px;
 }
 
+.container-18 {
+    width: 80%;
+    height: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: [satu] 1fr [dua] 1fr [tiga];
+    grid-template-columns: [kolom-1] 1fr [kolom-2] 1fr [kolom-3] 1fr [kolom-4];
+    gap: 5px;
+}
+
+.container-19 {
+    width: 80%;
+    height: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: [satu] 1fr [dua] 1fr [tiga];
+    grid-template-columns: [kolom-1] 1fr [kolom-2] 1fr [kolom-3] 1fr [kolom-4];
+    gap: 5px;
+}
+
+.container-20 {
+    width: 80%;
+    height: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: [satu] 1fr [dua] 1fr [tiga];
+    grid-template-columns: [kolom-1] 1fr [kolom-2] 1fr [kolom-3] 1fr [kolom-4];
+    gap: 5px;
+}
+
+.container-21 {
+    width: 80%;
+    height: 800px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: [satu] 1fr [dua] 1fr [tiga];
+    grid-template-columns: [kolom-1] 1fr [kolom-2] 1fr [kolom-3] 1fr [kolom-4];
+    gap: 5px;
+}
+
 .header {
     grid-area: header;
     background-color:blue;
@@ -262,12 +302,100 @@ body {
     /* width: 200px; */
 }
 
+.item4 {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px; */
+
+    /* grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2; */
+/* 
+    grid-column: 1 / 3;
+    grid-row: 1 / 2; */
+
+    /* grid-area: 1 / 1 / 2 / 3; */
+
+    /* grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 1; */
+
+    /* 
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1; */
+    
+    /* grid-area: 1 / 1 / span 1 / span 2; */
+
+    /* grid-column-start: satu;
+    grid-column-end: dua;
+    grid-row-start: kolom-1;
+    grid-row-end: kolom-3; */
+
+    /* grid-column-start: -3;
+    grid-column-end: -1;
+    grid-row-start: -2;
+    grid-row-end: -1; */
+
+    /* grid-column: -3 / -1;
+    grid-row: -2 / -1; */
+
+    grid-area: -2 / -3 / -1 / -1;
+}
+
+
 .item:nth-child(even) {
     background-color: blue;
 }
 
 .item3:nth-child(even) {
     background-color: blue;
+}
+
+.item4:nth-child(even) {
+    background-color: blue;
+}
+
+.solo {
+    justify-self: start;
+}
+.duo {
+    justify-self: end;
+}
+.trio {
+    justify-self: center;
+}
+.squad {
+    justify-self: stretch;
+}
+
+.satu {
+    align-self: start;
+}
+.dua {
+    align-self: end;
+}
+.tiga {
+    align-self: center;
+}
+.empat {
+    align-self: stretch;
+}
+
+.one {
+    place-self: start end;
+}
+.two {
+    place-self: end start;
+}
+.three {
+    place-self: center;
+}
+.four {
+    place-self: stretch start;
 }
 
 h1 {
