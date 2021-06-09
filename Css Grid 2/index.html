@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <title>Css Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <header class="header">
+            <div class="hero">
+                <h2 class="heading">Xsekutor Merch</h2>
+                <p class="sub-heading">Mechanical Keyboard</p>
+            </div>
+            <div class="features feature-1">
+                <h4 class="price">IDR 2500K</h4>
+                <p class="item">Rgb Mechanical Keyboard</p>
+            </div>
+            <div class="features feature-2">
+                <h4 class="price">IDR 1500K</h4>
+                <p class="item">Non Rgb Mechanical Keyboard</p>
+            </div>
+        </header>
+
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Xsekutor Merch</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <section class="services">
+            <div class="service">
+                <div class="icon">💫</div>
+                <h3>Premium Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur voluptatum consectetur qui laudantium possimus?</p>
+            </div>
+            <div class="service">
+                <div class="icon">💰</div>
+                <h3>Cheap</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur voluptatum consectetur qui laudantium possimus?</p>
+            </div>
+            <div class="service">
+                <div class="icon">🎮</div>
+                <h3>Best For Your Gaming Experience</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur voluptatum consectetur qui laudantium possimus?</p>
+            </div>
+            <div class="service">
+                <div class="icon">⌨</div>
+                <h3>You can change the Keycaps</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora consequatur voluptatum consectetur qui laudantium possimus?</p>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://source.unsplash.com/KYw1eUx1J7Y/200x200" alt="">
+            <img src="https://source.unsplash.com/X9kuR2sYSqo/200x200" alt="">
+            <img src="https://source.unsplash.com/2MCF_5fdcnU/200x200" alt="">
+            <img src="https://source.unsplash.com/b20J7YbTK8w/200x200" alt="">
+            <img src="https://source.unsplash.com/ZRoC_96HPnw/200x200" alt="">
+            <img src="https://source.unsplash.com/feXpdV001o4/200x200" alt="">
+            <img src="https://source.unsplash.com/PT_9ux0j-x4/200x200" alt="">
+            <img src="https://source.unsplash.com/1hODsNcJ7es/200x200" alt="">
+            <img src="https://source.unsplash.com/HIbAmybJHVs/200x200" alt="">
+            <img src="https://source.unsplash.com/U1I0IoQx3Yo/200x200" alt="">
+            <img src="https://source.unsplash.com/u-n1AFjUclo/200x200" alt="">
+        </section>
+
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+        
+        menuToggle.addEventListener('click',function(){
+            nav.classList.toggle('slide');
+        });</script>
+</body>
+</html>
