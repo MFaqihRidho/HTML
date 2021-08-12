@@ -23,3 +23,6 @@ const scroll = document.querySelectorAll(".scrollspy");
 M.ScrollSpy.init(scroll,{
     scrollOffset: 50
 });
+
+const sideNav = document.querySelectorAll('.sidenav');
+M.Sidenav.init(sideNav);
