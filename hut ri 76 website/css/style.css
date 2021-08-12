@@ -52,7 +52,7 @@ nav{
 
 .proklamasi{
     height: 215px !important; ;
-    width: 500px !important;
+    width: 400px !important;
 }
 
 .gambar-proklamasi{
@@ -268,7 +268,7 @@ ul.dropdown-content.select-dropdown li span {
     .proklamasi{
         margin-left: -10px;
         height: 300px !important; ;
-        max-width: 300px !important;
+        max-width: 350px !important;
     }
     .gambar-proklamasi{
         height: 300px !important;
