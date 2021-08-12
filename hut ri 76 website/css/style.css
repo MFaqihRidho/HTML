@@ -1,0 +1,280 @@
+body{
+    font-family: 'Lexend', sans-serif;
+}
+
+nav{
+    font-weight: 600;
+}
+
+.slider{
+    z-index: -999 !important;
+}
+
+.logo{
+    width:130px;
+}
+
+.logo-slide{
+    width:300px !important; 
+}
+
+.caption-2{
+    transform: translateX(0px) translateY(-60px) !important;
+}
+
+.slide-2{
+    width:350px !important;
+}
+
+
+.caption-3{
+    transform: translateX(0px) translateY(-100px) !important;
+}
+
+.slide-3{
+    width:500px !important;
+}
+
+.sejarah{
+    background-color: #ffff ;
+    text-align: center;
+}
+
+.wave{
+    margin-top: -350px;
+    z-index: 9999 !important;
+}
+
+.sejarah-text{
+    font-weight: 550;
+    text-align: center !important;
+}
+
+.proklamasi{
+    height: 215px !important; ;
+    width: 500px !important;
+}
+
+.gambar-proklamasi{
+    height: 215px !important;
+}
+
+.card.horizontal .card-stacked .card-content {
+    align-items: center;
+    justify-items: center;
+    margin-top:35px;
+}
+
+
+.materi{
+    margin-top: 30px;
+}
+
+.collapsible-header{
+    justify-content: center;
+}
+
+.tarik-tambang{
+    margin-top:-10px;
+    text-align: center;
+    background-color: #F44336;
+    padding-bottom: 10px;
+}
+
+.tarik-tambang-header{
+    font-weight: 550;
+}
+
+.tarik-tambang-text{
+    font-size: 20.3px;
+}
+
+.tarik-tambang-card{
+    margin-top:25px;
+    height: 390px;
+}
+
+.makan-kerupuk{
+    margin-top:-10px;
+    text-align: center;
+    background-color: #ffff;
+    padding-bottom: 10px;
+}
+
+.makan-kerupuk-header{
+    font-weight: 550;
+}
+
+.makan-kerupuk-text{
+    font-size: 20.3px;
+}
+
+.makan-kerupuk-card{
+    margin-top:25px;
+    height: 420px;
+}
+
+.balap-karung{
+    margin-top:-10px;
+    text-align: center;
+    background-color: #F44336;
+    padding-bottom: 7px;
+}
+
+.balap-karung-header{
+    font-weight: 550;
+}
+
+.balap-karung-text{
+    font-size: 20.3px;
+}
+
+.balap-karung-card{
+    margin-top:25px;
+    height: 420px;
+}
+
+.panjat-pinang{
+    margin-top:-10px;
+    text-align: center;
+    background-color: #ffff;
+    padding-bottom: 10px;
+}
+
+.panjat-pinang-header{
+    font-weight: 550;
+}
+
+.panjat-pinang-text{
+    font-size: 20.3px;
+}
+
+.panjat-pinang-card{
+    margin-top:25px;
+    height: 420px;
+}
+
+.daftar-lomba{
+    margin-top:-10px;
+    background-color: #F44336;
+    text-align: center;
+    padding-bottom:10px;
+}
+
+.daftar-lomba-header{
+    margin-bottom:50px;
+}
+
+.daftar-lomba-1{
+    margin-bottom:50px;
+}
+
+.daftar-lomba-2{
+    margin-bottom:50px;
+}
+
+.input-field [type=text] {
+    color: white !important;
+    opacity: 1;
+}
+.input-field [placeholder="Nama Kamu"]{
+    color: white !important;
+    opacity: 2 !important;
+}
+
+.input-field [type=text] {
+    color: white !important;
+    opacity: 1;
+}
+
+.input-field input:focus + label {
+    color: white !important;
+}
+
+.input-field input + label {
+    color: white !important;
+}
+
+.row .input-field input:focus {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important
+}
+
+.row .input-field input {
+    border-bottom: 1px solid white !important;
+    box-shadow: 0 1px 0 0 white !important 
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+    color: red !important
+}
+
+.select-dropdown{
+    color: red !important;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: red; 
+}
+
+.select-wrapper .caret{
+    fill: white !important;
+}
+
+.page-footer{
+    background-color:white;
+    color: black;
+}
+
+.footer-header{
+    font-weight: 550;
+}
+
+.footer-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-icon li{
+    width:50px;
+    margin-left: 10px;
+}
+
+.footer-icon li a img{
+    width: 50px;
+}
+
+/* .dropdown-content li{
+    color: white !important
+}
+
+.select-content li>span {
+    color: white !important;
+}
+
+.select-content li>a {
+    color: white !important;
+}
+
+.dropdown-content li>a {
+    color: white !important;
+}*/
+
+
+
+
+@media only screen and (max-width: 768px){
+    .proklamasi{
+        margin-left: -10px;
+        height: 300px !important; ;
+        width: 378px !important;
+    }
+    .gambar-proklamasi{
+        height: 300px !important;
+    }
+
+    .card.horizontal .card-stacked .card-content {
+        margin-top:20px;
+    }
+}
