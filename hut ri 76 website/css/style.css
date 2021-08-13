@@ -273,6 +273,10 @@ ul.dropdown-content.select-dropdown li span {
         height: 200px !important;
     }
 
+    .slide-2{
+        margin-right: 10px !important;
+    }
+
     .card.horizontal .card-stacked .card-content {
         margin-top:0px;
     }
