@@ -26,3 +26,26 @@ M.ScrollSpy.init(scroll,{
 
 const sideNav = document.querySelectorAll('.sidenav');
 M.Sidenav.init(sideNav);
+
+const proklamasi = document.querySelector('.card-content p')
+
+
+
+
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+function handleTabletChange(e) {
+  // Check if the media query is true
+    if (e.matches) {
+    // Then log the following message to the console
+    proklamasi.innerHTML = 'Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi, atau tanggal 17 Agustus 2605 menurut tahun Jepang, yang dibacakan oleh Soekarno dengan didampingi oleh Drs. Mohammad Hatta'
+    }else{
+        proklamasi.innerHTML = 'Proklamasi Kemerdekaan Indonesia dilaksanakan pada hari Jumat, 17 Agustus 1945 tahun Masehi'
+    }
+}
+
+// Register event listener
+mediaQuery.addListener(handleTabletChange)
+
+// Initial check
+handleTabletChange(mediaQuery)
