@@ -274,7 +274,7 @@ ul.dropdown-content.select-dropdown li span {
     }
 
     .slide-2{
-        margin-right: -10px !important;
+        transform: translatex(-50px) !important;
     }
 
     .card.horizontal .card-stacked .card-content {
