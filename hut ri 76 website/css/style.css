@@ -62,7 +62,7 @@ nav{
 .card.horizontal .card-stacked .card-content {
     align-items: center;
     justify-items: center;
-    margin-top:40px;
+    margin-top:10px;
 }
 
 
@@ -264,7 +264,7 @@ ul.dropdown-content.select-dropdown li span {
 
 
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 768px){
     .proklamasi{
         height: 200px !important; ;
         max-width: 300px !important;
@@ -273,11 +273,15 @@ ul.dropdown-content.select-dropdown li span {
         height: 200px !important;
     }
 
+    /* .wave{
+        padding-left: 30px;
+    } */
+
     .slide-2{
         transform: translatex(-50px) !important;
     }
     .slide-1{
-        transform: translatex(-20px) !important;
+        transform: translatex(-40px) !important;
     }
 
     .card.horizontal .card-stacked .card-content {
