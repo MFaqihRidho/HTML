@@ -62,7 +62,7 @@ nav{
 .card.horizontal .card-stacked .card-content {
     align-items: center;
     justify-items: center;
-    margin-top:35px;
+    /* margin-top:35px; */
 }
 
 
@@ -266,14 +266,14 @@ ul.dropdown-content.select-dropdown li span {
 
 @media only screen and (max-width: 900px){
     .proklamasi{
-        height: 300px !important; ;
-        max-width: 380px !important;
+        height: 200px !important; ;
+        max-width: 315px !important;
     }
     .gambar-proklamasi{
-        height: 300px !important;
+        height: 200px !important;
     }
 
     .card.horizontal .card-stacked .card-content {
-        margin-top:20px;
+        margin-top:0px;
     }
 }
