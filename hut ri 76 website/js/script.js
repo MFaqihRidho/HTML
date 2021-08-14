@@ -28,7 +28,9 @@ const sideNav = document.querySelectorAll('.sidenav');
 M.Sidenav.init(sideNav);
 
 const proklamasi = document.querySelector('.card-content p')
-
+// const kolapsible = document.querySelectorAll('.collapsible li')
+// console.log(document.querySelector(".collapsible").style.width);
+proklamasi.style.width = '100%';
 
 
 
