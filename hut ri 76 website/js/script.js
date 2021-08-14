@@ -34,7 +34,7 @@ proklamasi.style.width = '100%';
 
 
 
-const mediaQuery = window.matchMedia('(min-width: 1024px)')
+const mediaQuery = window.matchMedia('(min-width: 1440px)')
 
 function handleTabletChange(e) {
   // Check if the media query is true
