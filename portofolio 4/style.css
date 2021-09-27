@@ -1,0 +1,73 @@
+
+.navbar-nav{
+    font-family: 'roboto',sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-brand{
+    font-family: 'Monoton';
+    color: white !important;
+}
+
+#header{
+    font-family: 'Raleway', sans-serif;
+    margin-top:400px;
+    font-size: 62px;
+    width: 370px;
+}
+
+#welcome-section{
+    background: rgb(0,36,83);
+    background: linear-gradient(45deg, rgba(0,36,83,1) 10%, rgba(255,43,74,1) 90%);
+    margin-top: -265px;
+    min-height: 900px;
+}
+#about{
+    font-family: 'roboto',sans-serif;;
+    min-height: 400px;
+}
+
+.btn-grad {background-image: linear-gradient(to right, rgba(255,43,74,1) 0%, rgba(0,36,83,1)  51%, rgba(255,43,74,1)  100%)}
+.btn-grad {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    border: none;
+}
+
+.btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#projects{
+    background: linear-gradient(45deg, rgba(0,36,83,1) 10%, rgba(255,43,74,1) 90%);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.message,footer{
+    background: linear-gradient(45deg, rgba(0,36,83,1) 10%, rgba(255,43,74,1) 90%);
+}
+
+input:-internal-autofill-selected{
+    background-color: transparent !important;
+}
+
+#contact{
+    min-height: 700px;
+}
+
+footer{
+    min-height:100px;
+}
